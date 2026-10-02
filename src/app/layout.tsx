@@ -11,6 +11,11 @@ const jetbrains = JetBrains_Mono({ variable: "--font-jetbrains", subsets: ["lati
 export const metadata: Metadata = {
   title: "TJ&U Fitness · BuruBuru, Nairobi",
   description: "Strength, cardio, boxing, personal training, sauna and nutrition on Rabai Road, BuruBuru. Open Mon–Fri 4am–10pm.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
