@@ -87,7 +87,7 @@ export default function Home() {
           <div className={`${eyebrow} mb-5`}>PERSONAL TRAINING</div>
           <h2 className={h2}>A coach in your corner, every week.</h2>
           <p className="mt-6 max-w-[480px] text-lg leading-[1.65] text-body">Your coach assesses where you are, writes the programme and adjusts it as you progress. Personal training sessions are built into our packages.</p>
-          <div className="mt-10 grid grid-cols-2 gap-px border border-line bg-line">
+          <div className="mt-10 grid grid-cols-1 gap-px border border-line bg-line sm:grid-cols-2">
             <div className="bg-paper p-6">
               <div className="text-xs tracking-[.16em] text-muted">STARTER</div>
               <div className="mt-2.5 text-3xl font-light tracking-[-.02em]">2 × 30 min</div>
@@ -170,10 +170,10 @@ export default function Home() {
             </div>
             <Link href="/community" className={linkU}>Meet the community</Link>
           </div>
-          <div className="grid h-[min(56vh,520px)] min-h-[340px] grid-cols-[1.4fr_1fr_1fr] gap-3">
-            <div className="relative overflow-hidden rounded bg-[#1a1a1a]"><LoopVideo id={6389568} /></div>
-            <div className="rounded" style={bgImg(PX(6455820, 900))} />
-            <div className="rounded" style={bgImg(PX(6455813, 700))} />
+          <div className="grid grid-cols-1 gap-3 md:h-[min(56vh,520px)] md:min-h-[340px] md:grid-cols-[1.4fr_1fr_1fr]">
+            <div className="relative h-[280px] overflow-hidden rounded bg-[#1a1a1a] md:h-full"><LoopVideo id={6389568} /></div>
+            <div className="h-[220px] rounded md:h-full" style={bgImg(PX(6455820, 900))} />
+            <div className="h-[220px] rounded md:h-full" style={bgImg(PX(6455813, 700))} />
           </div>
         </div>
       </section>

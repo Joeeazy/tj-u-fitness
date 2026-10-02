@@ -76,7 +76,7 @@ export default function Signup() {
 
         {step === 1 && (
           <>
-            <h1 className="mb-2 text-[40px] font-bold tracking-[-.02em]">Create your account</h1>
+            <h1 className="mb-2 text-[clamp(28px,6.5vw,40px)] font-bold tracking-[-.02em]">Create your account</h1>
             <p className="mb-8 text-base text-muted">Already a member? <Link href="/login" className="border-b border-current font-semibold text-ink">Log in</Link></p>
             <div className="flex flex-col gap-3.5">
               <label className={label}>FULL NAME<input value={form.name} onChange={set("name")} placeholder="e.g. Wanjiru Kamau" className={input} autoComplete="name" /></label>
@@ -91,7 +91,7 @@ export default function Signup() {
 
         {step === 2 && (
           <>
-            <h1 className="mb-2 text-[40px] font-bold tracking-[-.02em]">Choose your plan</h1>
+            <h1 className="mb-2 text-[clamp(28px,6.5vw,40px)] font-bold tracking-[-.02em]">Choose your plan</h1>
             <p className="mb-7 text-base text-muted">You can upgrade any time at the front desk.</p>
             <div className="flex flex-col gap-2.5">
               {PLANS.map(p => {
@@ -116,7 +116,7 @@ export default function Signup() {
 
         {step === 3 && (
           <>
-            <h1 className="mb-2 text-[40px] font-bold tracking-[-.02em]">Pay with M-Pesa</h1>
+            <h1 className="mb-2 text-[clamp(28px,6.5vw,40px)] font-bold tracking-[-.02em]">Pay with M-Pesa</h1>
             <p className="mb-7 text-base text-muted">We&apos;ll send a payment prompt to your phone.</p>
             <div className="flex flex-col gap-3 rounded-[2px] border border-[#E0DCD3] bg-white p-[22px]">
               <div className="flex justify-between text-base"><span className="text-muted">Plan</span><span className="font-semibold">{plan.name} · {plan.duration}</span></div>

@@ -24,7 +24,7 @@ export default function Login() {
     <section className="grid min-h-[calc(100vh-96px)] grid-cols-[repeat(auto-fit,minmax(min(100%,460px),1fr))]">
       <form onSubmit={submit} className="flex w-full max-w-[560px] flex-col justify-center justify-self-end px-[clamp(24px,5vw,80px)] py-16">
         <div className="mb-4 text-[13px] tracking-[.28em] text-bronze">MEMBERS</div>
-        <h1 className="mb-2 text-[44px] font-bold tracking-[-.02em]">Welcome back</h1>
+        <h1 className="mb-2 text-[clamp(32px,7vw,44px)] font-bold tracking-[-.02em]">Welcome back</h1>
         <p className="mb-8 text-base text-muted">New here? <Link href="/signup" className="border-b border-current font-semibold text-ink">Create an account</Link></p>
         <div className="flex flex-col gap-3.5">
           <label className={label}>PHONE OR EMAIL<input value={id} onChange={e => { setId(e.target.value); setError(""); }} placeholder="07XX XXX XXX" className={input} autoComplete="username" /></label>

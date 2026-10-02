@@ -13,11 +13,12 @@ export default function Header() {
 
   return (
     <div className="fixed inset-x-0 top-4 z-50 px-4">
-      <header className="mx-auto flex h-[68px] max-w-[1200px] items-center justify-between gap-6 rounded-full border border-white/15 bg-ink/60 px-6 text-white shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-xl">
-        <Link href="/" className="flex items-center gap-2.5">
+      <header className="mx-auto flex h-16 max-w-[1200px] items-center justify-between gap-2 rounded-full border border-white/15 bg-ink/60 px-3 text-white shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-xl sm:h-[68px] sm:gap-6 sm:px-6">
+        <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="TJ&U Fitness" className="h-9 w-9 object-contain" />
-          <div className="flex flex-col leading-none">
+          <img src="/logo.png" alt="TJ&U Fitness" className="h-8 w-8 shrink-0 object-contain sm:h-9 sm:w-9" />
+          <span className="text-[15px] font-extrabold tracking-[.04em] sm:hidden">TJ&amp;U</span>
+          <div className="hidden flex-col leading-none sm:flex">
             <span className="text-[17px] font-extrabold tracking-[.04em]">TJ&amp;U</span>
             <span className="mt-[2px] text-[9px] tracking-[.28em] text-white/60">FITNESS</span>
           </div>
@@ -32,25 +33,25 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2.5 whitespace-nowrap">
+        <div className="flex items-center gap-1.5 whitespace-nowrap sm:gap-2.5">
           <a href={CONTACT.tel} className="hidden text-sm font-semibold text-white/85 hover:text-gold min-[1100px]:inline-flex">{CONTACT.phone}</a>
           {user ? (
-            <Link href="/dashboard" className="rounded-full bg-gold px-[22px] py-3 text-sm font-semibold text-ink hover:bg-white">My account</Link>
+            <Link href="/dashboard" className="rounded-full bg-gold px-3.5 py-2 text-xs font-semibold text-ink hover:bg-white sm:px-[22px] sm:py-3 sm:text-sm">My account</Link>
           ) : (
             <>
               <Link href="/login" className="hidden rounded-full border border-white/50 px-5 py-[11px] text-sm font-semibold hover:bg-white/10 sm:inline-flex">Log in</Link>
-              <Link href="/signup" className="rounded-full bg-gold px-[22px] py-3 text-sm font-semibold text-ink hover:bg-white">Join now</Link>
+              <Link href="/signup" className="rounded-full bg-gold px-3.5 py-2 text-xs font-semibold text-ink hover:bg-white sm:px-[22px] sm:py-3 sm:text-sm">Join now</Link>
             </>
           )}
-          <button onClick={() => setMenu(m => !m)} className="cursor-pointer rounded-full border border-white/50 px-[18px] py-[11px] text-sm font-semibold hover:bg-white/10 min-[1100px]:hidden">
+          <button onClick={() => setMenu(m => !m)} className="cursor-pointer rounded-full border border-white/50 px-3 py-2 text-xs font-semibold hover:bg-white/10 sm:px-[18px] sm:py-[11px] sm:text-sm min-[1100px]:hidden">
             {menu ? "Close" : "Menu"}
           </button>
         </div>
       </header>
 
       {menu && (
-        <div className="mx-auto mt-2 max-w-[1200px] rounded-[26px] border border-white/15 bg-ink/90 text-white shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-xl min-[1100px]:hidden">
-          <div className="flex flex-col px-7 pb-5 pt-3">
+        <div className="mx-auto mt-2 max-h-[calc(100vh-100px)] max-w-[1200px] overflow-y-auto rounded-[26px] border border-white/15 bg-ink/90 text-white shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-xl min-[1100px]:hidden">
+          <div className="flex flex-col px-5 pb-5 pt-3 sm:px-7">
             {NAV.map(n => (
               <Link key={n.href} href={n.href} className="flex justify-between border-b border-white/10 py-4 text-lg font-semibold">
                 <span>{n.label}</span>

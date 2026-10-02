@@ -36,7 +36,7 @@ export default function Dashboard() {
           <div className="flex items-start justify-between gap-4">
             <div>
               <div className="text-xs tracking-[.2em] text-gold">ACTIVE PLAN</div>
-              <div className="mt-2.5 text-[40px] font-bold tracking-[-.02em]">{plan.name}</div>
+              <div className="mt-2.5 text-[clamp(28px,6vw,40px)] font-bold tracking-[-.02em]">{plan.name}</div>
               <div className="mt-1 text-stone">{plan.duration} · KES {fmt(plan.price)}</div>
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
