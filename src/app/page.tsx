@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LoopVideo from "@/components/LoopVideo";
+import HeroCarousel from "@/components/HeroCarousel";
 import { CONTACT, HOME_TILES, MARQUEE, PLANS, PX, fmt } from "@/lib/data";
 import { bgImg, btnDark, btnGhostLight, btnGold, btnOutline, btnWhite, eyebrow, eyebrowGold, h2, linkU, wrap } from "@/lib/ui";
 
@@ -12,14 +13,10 @@ const STEPS = [
 export default function Home() {
   return (
     <>
-      {/* Hero: three looping clips */}
-      <section className="relative h-[min(88vh,860px)] min-h-[560px] overflow-hidden bg-ink">
-        <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-3">
-          {[6389833, 6388868, 6388419].map((id, i) => (
-            <div key={id} className={`relative overflow-hidden ${i > 0 ? "hidden md:block" : ""}`}><LoopVideo id={id} /></div>
-          ))}
-        </div>
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,.72)_0%,rgba(10,10,10,.25)_55%,rgba(10,10,10,0)_100%)]" />
+      {/* Hero: full-screen, sits behind the floating nav */}
+      <section className="relative -mt-24 h-screen overflow-hidden bg-ink">
+        <HeroCarousel ids={[6389833, 6388868, 6388419]} />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0)_40%,rgba(10,10,10,.55)_100%),linear-gradient(90deg,rgba(10,10,10,.5)_0%,rgba(10,10,10,.12)_45%,rgba(10,10,10,0)_72%)]" />
         <div className={`${wrap} relative flex h-full flex-col justify-end pb-[88px] text-white`}>
           <div className={`${eyebrowGold} mb-[22px]`}>BURUBURU · NAIROBI</div>
           <h1 className="max-w-[900px] text-balance text-[clamp(48px,7vw,104px)] font-bold leading-[.95] tracking-[-.03em]">Stronger together, right here in BuruBuru.</h1>

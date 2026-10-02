@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Training & services · TJ&U Fitness"
 export default function Training() {
   return (
     <>
-      <section className="relative h-[min(64vh,620px)] min-h-[420px] overflow-hidden bg-ink">
+      <section className="relative -mt-24 h-[min(64vh,620px)] min-h-[420px] overflow-hidden bg-ink">
         <div className="absolute inset-0" style={bgImg(PX(6455963), "center 30%")} />
         <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(10,10,10,.75),rgba(10,10,10,.1)_60%)]" />
         <div className={`${wrap} relative flex h-full flex-col justify-end pb-16 text-white`}>

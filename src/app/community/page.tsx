@@ -14,7 +14,7 @@ const CARDS = [
 export default function Community() {
   return (
     <>
-      <section className="relative h-[min(72vh,700px)] min-h-[460px] overflow-hidden bg-ink">
+      <section className="relative -mt-24 h-[min(72vh,700px)] min-h-[460px] overflow-hidden bg-ink">
         <div className="absolute inset-0" style={bgImg(PX(6456140))} />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,.7),rgba(10,10,10,0)_70%)]" />
         <div className={`${wrap} relative flex h-full flex-col justify-end pb-[72px] text-white`}>

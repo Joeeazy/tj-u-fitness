@@ -55,7 +55,7 @@ export default function Signup() {
   const firstName = form.name.split(" ")[0] || "Member";
 
   return (
-    <section className="grid min-h-[calc(100vh-116px)] grid-cols-[repeat(auto-fit,minmax(min(100%,460px),1fr))]">
+    <section className="grid min-h-[calc(100vh-96px)] grid-cols-[repeat(auto-fit,minmax(min(100%,460px),1fr))]">
       <div className="relative min-h-[360px] bg-ink" style={{ backgroundImage: `url(${PX(6793653)})`, backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(10,10,10,.75),rgba(10,10,10,0)_60%)]" />
         <div className="absolute inset-x-10 bottom-11 text-white">

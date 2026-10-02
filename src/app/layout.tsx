@@ -24,7 +24,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col bg-paper font-sans text-ink">
         <AuthProvider>
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pt-24">{children}</main>
           <Footer />
         </AuthProvider>
       </body>

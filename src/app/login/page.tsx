@@ -21,7 +21,7 @@ export default function Login() {
   };
 
   return (
-    <section className="grid min-h-[calc(100vh-116px)] grid-cols-[repeat(auto-fit,minmax(min(100%,460px),1fr))]">
+    <section className="grid min-h-[calc(100vh-96px)] grid-cols-[repeat(auto-fit,minmax(min(100%,460px),1fr))]">
       <form onSubmit={submit} className="flex w-full max-w-[560px] flex-col justify-center justify-self-end px-[clamp(24px,5vw,80px)] py-16">
         <div className="mb-4 text-[13px] tracking-[.28em] text-bronze">MEMBERS</div>
         <h1 className="mb-2 text-[44px] font-bold tracking-[-.02em]">Welcome back</h1>
