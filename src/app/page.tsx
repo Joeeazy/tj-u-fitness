@@ -16,12 +16,12 @@ export default function Home() {
       {/* Hero: full-screen, sits behind the floating nav */}
       <section className="relative -mt-24 h-screen overflow-hidden bg-ink">
         <HeroCarousel ids={[6389833, 6388868, 6388419]} />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0)_40%,rgba(10,10,10,.55)_100%),linear-gradient(90deg,rgba(10,10,10,.5)_0%,rgba(10,10,10,.12)_45%,rgba(10,10,10,0)_72%)]" />
-        <div className={`${wrap} relative flex h-full flex-col justify-end pb-[88px] text-white`}>
-          <div className={`${eyebrowGold} mb-[22px]`}>BURUBURU · NAIROBI</div>
-          <h1 className="max-w-[900px] text-balance text-[clamp(48px,7vw,104px)] font-bold leading-[.95] tracking-[-.03em]">Stronger together, right here in BuruBuru.</h1>
-          <p className="mt-7 max-w-[520px] text-[19px] leading-[1.55] text-[#EDEAE2]">Coaches who know your name, equipment for every goal and neighbours who keep you showing up. Doors open at 4am.</p>
-          <div className="mt-9 flex flex-wrap gap-3">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0)_45%,rgba(10,10,10,.4)_100%),linear-gradient(90deg,rgba(10,10,10,.35)_0%,rgba(10,10,10,.05)_40%,rgba(10,10,10,0)_60%)]" />
+        <div className={`${wrap} relative flex h-full flex-col justify-end pb-24 text-white`}>
+          <div className={`${eyebrowGold} mb-5`}>BURUBURU · NAIROBI</div>
+          <h1 className="max-w-[640px] text-balance text-[clamp(30px,4.2vw,58px)] font-bold leading-[1.1] tracking-[.01em]">Stronger together, right here.</h1>
+          <p className="mt-6 max-w-[440px] text-base leading-[1.6] tracking-[.005em] text-[#EDEAE2]">Coaches who know your name, equipment for every goal and neighbours who keep you showing up.</p>
+          <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/signup" className={btnGold}>Become a member</Link>
             <Link href="/membership" className={btnGhostLight}>See plans from KES 500</Link>
           </div>
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(10,10,10,.8)_0%,rgba(10,10,10,.1)_55%)]" />
         <div className={`${wrap} relative flex h-full flex-col justify-end pb-[72px] text-white`}>
           <div className={`${eyebrowGold} mb-[18px]`}>OPEN FROM 4AM</div>
-          <h2 className="max-w-[1000px] text-balance text-[clamp(44px,6.4vw,104px)] font-bold leading-[.92] tracking-[-.035em]">Before the city wakes, BuruBuru trains.</h2>
+          <h2 className="max-w-[1000px] text-balance text-[clamp(44px,6.4vw,104px)] font-bold leading-[.92] tracking-[-.035em]">Before the city wakes, you train.</h2>
           <div className="mt-8 flex flex-wrap items-end justify-between gap-6">
             <p className="max-w-[520px] text-lg leading-relaxed text-[#EDEAE2]">Fit your session in before work, after work or on your lunch break. Monday to Friday, 4am to 10pm.</p>
             <Link href="/about" className={btnWhite}>See opening hours</Link>

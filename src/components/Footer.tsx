@@ -16,7 +16,7 @@ export default function Footer() {
               <img src="/logo.png" alt="" className="h-[52px] w-[52px] rounded-full bg-white object-contain p-1" />
               <span className="text-xl font-extrabold tracking-[.04em] text-white">TJ&amp;U FITNESS</span>
             </div>
-            <p className="text-[15px] leading-relaxed">BuruBuru&apos;s neighbourhood gym since day one.</p>
+            <p className="text-[15px] leading-relaxed">Your neighbourhood gym since day one.</p>
           </div>
           <div className={col}>
             <div className={head}>Explore</div>
