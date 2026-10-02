@@ -1,0 +1,16 @@
+export const wrap = "mx-auto w-full max-w-[1360px] px-8";
+export const eyebrow = "text-[13px] tracking-[.28em] text-bronze";
+export const eyebrowGold = "text-[13px] tracking-[.28em] text-gold";
+const btn = "inline-flex cursor-pointer items-center justify-center rounded-full text-base transition-colors";
+export const btnDark = `${btn} bg-ink px-[30px] py-[17px] font-bold text-white hover:bg-gold-dark`;
+export const btnGold = `${btn} bg-gold px-[30px] py-[17px] font-bold text-ink hover:bg-white`;
+export const btnWhite = `${btn} bg-white px-7 py-4 font-bold text-ink hover:bg-gold`;
+export const btnOutline = `${btn} border border-ink px-7 py-[15px] font-semibold text-ink hover:bg-ink hover:text-white`;
+export const btnGhostLight = `${btn} border border-white/70 px-[30px] py-[17px] font-semibold text-white hover:bg-white/10`;
+export const linkU = "inline-block border-b border-current pb-[3px] font-semibold hover:text-bronze";
+export const h1Page = "text-[clamp(48px,6.5vw,96px)] font-bold leading-[.95] tracking-[-.035em]";
+export const h2 = "text-[clamp(36px,4.4vw,64px)] font-bold leading-none tracking-[-.025em]";
+export const h2Sm = "text-[clamp(32px,3.4vw,48px)] font-bold tracking-[-.02em]";
+export const label = "flex flex-col gap-2 text-[13px] font-semibold tracking-[.04em]";
+export const input = "rounded-[2px] border border-[#CFCABF] bg-white p-4 text-base font-normal tracking-normal outline-none focus:border-ink";
+export const bgImg = (url: string, pos = "center") => ({ backgroundImage: `url(${url})`, backgroundSize: "cover", backgroundPosition: pos });

@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TJ&U Fitness: Next.js code
 
-## Getting Started
+Built for your `fitness` project (Next.js 16, React 19, Tailwind 4). No new packages needed.
 
-First, run the development server:
+## Install
+1. Copy `src/` and `public/logo.png` from this folder into your `fitness` folder. Replace the existing `src/app/layout.tsx`, `page.tsx` and `globals.css`.
+2. Run `npm run dev` and open http://localhost:3000.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Pages
+`/` home · `/membership` · `/training` · `/wellness` · `/community` · `/gallery` · `/about` · `/signup` · `/login` · `/dashboard`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Things to replace before launch
+- **Sign up, log in and M-Pesa are mock-ups.** Accounts are stored in the visitor's browser (`src/lib/auth.tsx`) and payment is simulated (`src/app/signup/page.tsx` → `sendStk`). Connect a real backend and the Daraja STK Push API.
+- **The contact form doesn't send anything** (`src/app/about/ContactForm.tsx`).
+- **Photos and videos are Pexels stock.** Image ids are in `src/lib/data.ts`. For your own videos, use `<LoopVideo src="/videos/clip.mp4" />` with files in `public/videos/`.
+- **Saturday and Sunday hours** say "Call to confirm" (`HOURS` in `src/lib/data.ts`).
